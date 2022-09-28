@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Blue\\source\\repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF.csproj": {}
+    "C:\\Users\\Blue\\Source\\Repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Blue\\source\\repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF.csproj": {
+    "C:\\Users\\Blue\\Source\\Repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Blue\\source\\repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF.csproj",
+        "projectUniqueName": "C:\\Users\\Blue\\Source\\Repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF.csproj",
         "projectName": "WesternInn_TG_SA_AF",
-        "projectPath": "C:\\Users\\Blue\\source\\repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF.csproj",
+        "projectPath": "C:\\Users\\Blue\\Source\\Repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF.csproj",
         "packagesPath": "C:\\Users\\Blue\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Blue\\source\\repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\obj\\",
+        "outputPath": "C:\\Users\\Blue\\Source\\Repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Blue\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,15 +54,21 @@
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.7, )"
+              "version": "[6.0.9, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[6.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.7, )"
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.9, )"
             }
           },
           "imports": [

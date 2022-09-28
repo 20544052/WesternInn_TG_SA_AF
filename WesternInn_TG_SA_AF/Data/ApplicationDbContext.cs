@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using WesternInn_TG_SA_AF.Models;
 
 namespace WesternInn_TG_SA_AF.Data
 {
@@ -9,5 +10,6 @@ namespace WesternInn_TG_SA_AF.Data
             : base(options)
         {
         }
+        public DbSet<WesternInn_TG_SA_AF.Models.Room> Room { get; set; }
     }
 }
