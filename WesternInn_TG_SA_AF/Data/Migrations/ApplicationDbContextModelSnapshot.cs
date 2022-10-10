@@ -219,10 +219,20 @@ namespace WesternInn_TG_SA_AF.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("GuestEmail")
+                    b.Property<DateTime>("CheckIn")
                         .HasColumnType("TEXT");
 
-                    b.Property<int?>("RoomId")
+                    b.Property<DateTime>("CheckOut")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal>("Cost")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("GuestEmail")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("RoomId")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
@@ -332,13 +342,21 @@ namespace WesternInn_TG_SA_AF.Data.Migrations
 
             modelBuilder.Entity("WesternInn_TG_SA_AF.Models.Booking", b =>
                 {
-                    b.HasOne("WesternInn_TG_SA_AF.Models.Guest", null)
+                    b.HasOne("WesternInn_TG_SA_AF.Models.Guest", "TheGuest")
                         .WithMany("TheBookings")
-                        .HasForeignKey("GuestEmail");
+                        .HasForeignKey("GuestEmail")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.HasOne("WesternInn_TG_SA_AF.Models.Room", null)
+                    b.HasOne("WesternInn_TG_SA_AF.Models.Room", "TheRoom")
                         .WithMany("TheBookings")
-                        .HasForeignKey("RoomId");
+                        .HasForeignKey("RoomId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("TheGuest");
+
+                    b.Navigation("TheRoom");
                 });
 
             modelBuilder.Entity("WesternInn_TG_SA_AF.Models.Guest", b =>

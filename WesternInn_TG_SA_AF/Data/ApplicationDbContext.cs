@@ -12,5 +12,6 @@ namespace WesternInn_TG_SA_AF.Data
         }
         public DbSet<WesternInn_TG_SA_AF.Models.Room> Room { get; set; }
         public DbSet<WesternInn_TG_SA_AF.Models.Guest> Guest { get; set; }
+        public DbSet<WesternInn_TG_SA_AF.Models.Booking> Booking { get; set; }
     }
 }
