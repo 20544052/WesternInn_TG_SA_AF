@@ -10704,23 +10704,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Alex\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\axema\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Alex\\Source\\Repos\\WesternInn_TG_SA_AF(1)\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF.csproj",
+      "projectUniqueName": "C:\\Users\\axema\\Source\\Repos\\WesternInn_TG_SA_AF(1)\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF.csproj",
       "projectName": "WesternInn_TG_SA_AF",
-      "projectPath": "E:\\Alex\\Source\\Repos\\WesternInn_TG_SA_AF(1)\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF.csproj",
-      "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
-      "outputPath": "E:\\Alex\\Source\\Repos\\WesternInn_TG_SA_AF(1)\\WesternInn_TG_SA_AF\\obj\\",
+      "projectPath": "C:\\Users\\axema\\Source\\Repos\\WesternInn_TG_SA_AF(1)\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF.csproj",
+      "packagesPath": "C:\\Users\\axema\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\axema\\Source\\Repos\\WesternInn_TG_SA_AF(1)\\WesternInn_TG_SA_AF\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\axema\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10796,7 +10792,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
