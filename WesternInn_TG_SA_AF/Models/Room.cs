@@ -9,7 +9,7 @@ namespace WesternInn_TG_SA_AF.Models
 
         [Required]
         [RegularExpression(@"^[G123]{1}$")]
-        public string Level { get; set; }
+        public string Level { get; set; } = string.Empty;
 
         [RegularExpression(@"^[123]{1}$")]
         public int BedCount { get; set; }
