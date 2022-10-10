@@ -26,7 +26,10 @@ namespace WesternInn_TG_SA_AF.Models
         [Range(0, 10000.0)]
         public decimal Cost { get; set; }
 
+        [Display(Name = "The Room")]
         public Room? TheRoom { get; set; }
+
+        [Display(Name = "The Guest")]
         public Guest? TheGuest { get; set; }
     }
 }

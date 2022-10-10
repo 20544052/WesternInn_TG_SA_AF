@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tgrima\\source\\repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF.csproj": {}
+    "E:\\Alex\\Source\\Repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tgrima\\source\\repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF.csproj": {
+    "E:\\Alex\\Source\\Repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tgrima\\source\\repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF.csproj",
+        "projectUniqueName": "E:\\Alex\\Source\\Repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF.csproj",
         "projectName": "WesternInn_TG_SA_AF",
-        "projectPath": "C:\\Users\\tgrima\\source\\repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF.csproj",
-        "packagesPath": "C:\\Users\\tgrima\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tgrima\\source\\repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\obj\\",
+        "projectPath": "E:\\Alex\\Source\\Repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF.csproj",
+        "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
+        "outputPath": "E:\\Alex\\Source\\Repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\tgrima\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -81,7 +80,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -93,7 +93,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
