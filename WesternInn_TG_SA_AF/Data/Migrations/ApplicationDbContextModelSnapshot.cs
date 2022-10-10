@@ -215,23 +215,52 @@ namespace WesternInn_TG_SA_AF.Data.Migrations
 
             modelBuilder.Entity("WesternInn_TG_SA_AF.Models.Booking", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int?>("RoomID")
+                    b.Property<string>("GuestEmail")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("RoomId")
                         .HasColumnType("INTEGER");
 
-                    b.HasKey("ID");
+                    b.HasKey("Id");
 
-                    b.HasIndex("RoomID");
+                    b.HasIndex("GuestEmail");
+
+                    b.HasIndex("RoomId");
 
                     b.ToTable("Booking");
                 });
 
+            modelBuilder.Entity("WesternInn_TG_SA_AF.Models.Guest", b =>
+                {
+                    b.Property<string>("Email")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("GivenName")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("PostCode")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Surname")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Email");
+
+                    b.ToTable("Guest");
+                });
+
             modelBuilder.Entity("WesternInn_TG_SA_AF.Models.Room", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
@@ -245,7 +274,7 @@ namespace WesternInn_TG_SA_AF.Data.Migrations
                     b.Property<decimal>("Price")
                         .HasColumnType("TEXT");
 
-                    b.HasKey("ID");
+                    b.HasKey("Id");
 
                     b.ToTable("Room");
                 });
@@ -303,9 +332,18 @@ namespace WesternInn_TG_SA_AF.Data.Migrations
 
             modelBuilder.Entity("WesternInn_TG_SA_AF.Models.Booking", b =>
                 {
+                    b.HasOne("WesternInn_TG_SA_AF.Models.Guest", null)
+                        .WithMany("TheBookings")
+                        .HasForeignKey("GuestEmail");
+
                     b.HasOne("WesternInn_TG_SA_AF.Models.Room", null)
                         .WithMany("TheBookings")
-                        .HasForeignKey("RoomID");
+                        .HasForeignKey("RoomId");
+                });
+
+            modelBuilder.Entity("WesternInn_TG_SA_AF.Models.Guest", b =>
+                {
+                    b.Navigation("TheBookings");
                 });
 
             modelBuilder.Entity("WesternInn_TG_SA_AF.Models.Room", b =>
