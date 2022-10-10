@@ -11,8 +11,8 @@ using WesternInn_TG_SA_AF.Data;
 namespace WesternInn_TG_SA_AF.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20221010030342_alltables")]
-    partial class alltables
+    [Migration("20221010033729_allthethings")]
+    partial class allthethings
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
