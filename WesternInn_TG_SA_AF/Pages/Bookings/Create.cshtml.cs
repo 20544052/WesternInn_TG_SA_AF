@@ -22,7 +22,7 @@ namespace WesternInn_TG_SA_AF.Pages.Bookings
         public IActionResult OnGet()
         {
         ViewData["GuestEmail"] = new SelectList(_context.Guest, "Email", "Email");
-        ViewData["RoomId"] = new SelectList(_context.Room, "Id", "Level");
+        ViewData["RoomId"] = new SelectList(_context.Room, "Id", "Id");
             return Page();
         }
 
