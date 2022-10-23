@@ -16,6 +16,7 @@ namespace WesternInn_TG_SA_AF.Models
         [Required(ErrorMessage = "Must start with a capital letter and continue with 1-19 letters, a hyphen or apostrophe")]
         [StringLength(20, MinimumLength = 2)]
         [RegularExpression(@"^[A-Za-z'-]{1,19}$")]
+        [Display(Name = "Given Name")]
         public string GivenName { get; set; } = string.Empty;
 
         [Required(ErrorMessage = "Residential postcode ranges only"), DataType(DataType.PostalCode), Display(Name = "Post Code")]
