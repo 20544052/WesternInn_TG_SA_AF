@@ -1,13 +1,16 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
-using System.Security.Claims;
 using WesternInn_TG_SA_AF.Models;
 
 namespace WesternInn_TG_SA_AF.Pages.Bookings
 {
-    public class BookingModel : PageModel
+    [Authorize(Roles = "Guest")]
+
+    public class BookingModel: PageModel
     {
         private readonly WesternInn_TG_SA_AF.Data.ApplicationDbContext _context;
 
@@ -16,35 +19,28 @@ namespace WesternInn_TG_SA_AF.Pages.Bookings
             _context = context;
         }
 
+        [BindProperty(SupportsGet = true)]
+        public RoomBooking BookingInput { get; set; }
+        
+        // List of different bookings; for passing to the content file to display
+        public IList<Booking> Bookings { get; set; }
+
+        // GET: Guest/RoomBooking
         public IActionResult OnGet()
         {
-            ViewData["RoomId"] = new SelectList(_context.Room, "Id", "Id");
-            ViewData["GuestEmail"] = new SelectList(_context.Guest, "Email", "FullName");
+            ViewData["GuestList"] = new SelectList(_context.Guest, "Email", "FullName");
             return Page();
         }
 
-        [BindProperty(SupportsGet = true)]
-        public Booking Booking { get; set; } = default!;
-
-        // To protect from overposting attacks, se https://aka.ms/RazorPagesCRUD
-        public async Task<IActionResult> OnPostAsync()
+        public async Task<IActionResult> OnPostAysnc()
         {
-            if (!ModelState.IsValid || _context.Booking == null || Booking == null)
+            if (!ModelState.IsValid)
             {
                 return Page();
             }
 
-            string _email = User.FindFirst(ClaimTypes.Name).Value;
-            Booking.GuestEmail = _email;
-            var theBooking = await _context.Room.Where(r => r.Id == Booking.RoomId).FirstAsync();
-
-            TimeSpan numNights = Booking.CheckOut.Subtract(Booking.CheckIn);
-            Booking.Cost = numNights.Days * theBooking.Price;
-
-            _context.Booking.Add(Booking);
-            await _context.SaveChangesAsync();
-
-            return RedirectToPage("./Index");
+            var bookingA = new SqliteParameter("roomA",BookingInput.BookingA);
+            var bookingB = new SqliteParameter("roomB", BookingInput.BookingB); 
         }
     }
 }
