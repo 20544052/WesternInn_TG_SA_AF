@@ -19,6 +19,8 @@ namespace WesternInn_TG_SA_AF.Models
         [Display(Name = "Given Name")]
         public string GivenName { get; set; } = string.Empty;
 
+        public string FullName => $"{GivenName} {Surname}";
+
         [Required(ErrorMessage = "Residential postcode ranges only"), DataType(DataType.PostalCode), Display(Name = "Post Code")]
         // Regex contains all Australian Residential post code sequences.
         // PO Boxes and Large Volume Receivers (LVRs) have been excluded.
