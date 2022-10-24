@@ -1,15 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Claims;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using WesternInn_TG_SA_AF.Data;
+using System.Security.Claims;
 using WesternInn_TG_SA_AF.Models;
-using System.Globalization;
 
 namespace WesternInn_TG_SA_AF.Pages.Bookings
 {
@@ -35,7 +29,7 @@ namespace WesternInn_TG_SA_AF.Pages.Bookings
         // To protect from overposting attacks, se https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
-            if(!ModelState.IsValid || _context.Booking == null || Booking == null)
+            if (!ModelState.IsValid || _context.Booking == null || Booking == null)
             {
                 return Page();
             }
@@ -43,10 +37,9 @@ namespace WesternInn_TG_SA_AF.Pages.Bookings
             string _email = User.FindFirst(ClaimTypes.Name).Value;
             Booking.GuestEmail = _email;
             var theBooking = await _context.Room.Where(r => r.Id == Booking.RoomId).FirstAsync();
-            DateTime a = await _context.Booking.Where(cout => cout.CheckOut);
-            DateTime b;
-            TimeSpan span = a.Subtract(b);
-            Booking.Cost = span.Days * theBooking.Price;
+
+            TimeSpan numNights = Booking.CheckOut.Subtract(Booking.CheckIn);
+            Booking.Cost = numNights.Days * theBooking.Price;
 
             _context.Booking.Add(Booking);
             await _context.SaveChangesAsync();
