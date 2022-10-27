@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Blue\\source\\repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF.csproj": {}
+    "C:\\Users\\test\\Source\\Repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Blue\\source\\repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF.csproj": {
+    "C:\\Users\\test\\Source\\Repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Blue\\source\\repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF.csproj",
+        "projectUniqueName": "C:\\Users\\test\\Source\\Repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF.csproj",
         "projectName": "WesternInn_TG_SA_AF",
-        "projectPath": "C:\\Users\\Blue\\source\\repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF.csproj",
-        "packagesPath": "C:\\Users\\Blue\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Blue\\source\\repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\obj\\",
+        "projectPath": "C:\\Users\\test\\Source\\Repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF.csproj",
+        "packagesPath": "C:\\Users\\test\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\test\\Source\\Repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Blue\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\test\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,8 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://dotnet.myget.org/F/dotnet-core/api/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -82,7 +81,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -94,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
