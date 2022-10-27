@@ -1,0 +1,30 @@
+﻿@page
+@model WesternInn_TG_SA_AF.Pages.SearchRoomsModel
+@{
+
+    <form asp-page="SearchRooms">
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="form-group">
+        <label asp-for="RoomViewModel.BedCount" class="control-label fw-bold"></label>
+        <select asp-for="RoomViewModel.BedCount" asp-items="Model.Beds" class="form-control">
+        </select>
+    </div>
+    <br />
+    <div class="form-group">
+        <label asp-for="RoomViewModel.CheckIn" class="control-label fw-bold" ></label>
+        <input asp-for="RoomViewModel.CheckIn" class="form-control" />
+        <span asp-validation-for="RoomViewModel.CheckIn" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="RoomViewModel.CheckOut" class="control-label fw-bold" ></label>
+        <input asp-for="RoomViewModel.CheckOut" class="form-control" />
+        <span asp-validation-for="RoomViewModel.CheckOut" class="text-danger"></span>
+    </div>
+    <br />
+    <div class="form-group">
+        <input type="submit" value="Search" class="btn btn-primary" />
+    </div>
+</form>
+
+
+}
