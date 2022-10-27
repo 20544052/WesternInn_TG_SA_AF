@@ -7,6 +7,7 @@ using WesternInn_TG_SA_AF.Models;
 
 namespace WesternInn_TG_SA_AF.Pages.Guests
 {
+    [Authorize(Roles = "Guests, Admin")]
     public class MyDetailsModel : PageModel
     {
         private readonly WesternInn_TG_SA_AF.Data.ApplicationDbContext _context;

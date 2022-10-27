@@ -10,7 +10,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite("Data Source=WesternInn.db"));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
+builder.Services.AddDefaultIdentity<IdentityUser>()
     .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddRazorPages();
@@ -38,5 +38,23 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapRazorPages();
-
+using (var scope = app.Services.CreateScope())
+{
+    // get the service providers
+    var services = scope.ServiceProvider;
+    try
+    {
+        var serviceProvider = services.GetRequiredService<IServiceProvider>();
+        // get the Config object for the appsettings.json file 
+        var configuration = services.GetRequiredService<IConfiguration>();
+        // Calling the static method created by us
+        // pass the service proiders and the config object to CreateRoles()
+        SeedRoles.CreateRoles(serviceProvider, configuration).Wait();
+    }
+    catch (Exception exception)
+    {
+        var logger = services.GetRequiredService<ILogger<Program>>();
+        logger.LogError(exception, "An error occurred while creating roles");
+    }
+}
 app.Run();
