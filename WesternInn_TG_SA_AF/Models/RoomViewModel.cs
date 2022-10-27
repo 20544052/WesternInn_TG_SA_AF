@@ -11,7 +11,10 @@ namespace WesternInn_TG_SA_AF.Models
         [RegularExpression(@"^[123]{1}$")]
         public int BedCount { get; set; }
 
+        [DataType(DataType.Date)]
         public DateOnly CheckIn { get; set; }
+
+        [DataType(DataType.Date)]
         public DateOnly CheckOut { get; set; }
 
 
