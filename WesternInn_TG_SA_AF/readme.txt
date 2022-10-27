@@ -4,5 +4,5 @@ Guest Login
 	Pass: Qwerty12!
 
 Admin Login
-	Email:admin@inn.com
-	Pass:
+	Email: admin@inn.com
+	Pass: Admin1!
