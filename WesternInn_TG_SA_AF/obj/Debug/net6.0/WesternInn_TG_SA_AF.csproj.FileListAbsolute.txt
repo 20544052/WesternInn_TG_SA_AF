@@ -2051,3 +2051,4 @@ C:\Users\test\Source\Repos\WesternInn_TG_SA_AF\WesternInn_TG_SA_AF\obj\Debug\net
 C:\Users\test\Source\Repos\WesternInn_TG_SA_AF\WesternInn_TG_SA_AF\obj\Debug\net6.0\WesternInn_TG_SA_AF.pdb
 C:\Users\test\Source\Repos\WesternInn_TG_SA_AF\WesternInn_TG_SA_AF\obj\Debug\net6.0\WesternInn_TG_SA_AF.genruntimeconfig.cache
 C:\Users\test\Source\Repos\WesternInn_TG_SA_AF\WesternInn_TG_SA_AF\obj\Debug\net6.0\ref\WesternInn_TG_SA_AF.dll
+E:\Alex\Source\Repos\WesternInn_TG_SA_AF\WesternInn_TG_SA_AF\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll

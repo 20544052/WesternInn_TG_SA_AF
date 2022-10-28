@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\test\\Source\\Repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF.csproj": {}
+    "E:\\Alex\\Source\\Repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF.csproj": {}
   },
   "projects": {
-    "C:\\Users\\test\\Source\\Repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF.csproj": {
+    "E:\\Alex\\Source\\Repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\test\\Source\\Repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF.csproj",
+        "projectUniqueName": "E:\\Alex\\Source\\Repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF.csproj",
         "projectName": "WesternInn_TG_SA_AF",
-        "projectPath": "C:\\Users\\test\\Source\\Repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF.csproj",
-        "packagesPath": "C:\\Users\\test\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\test\\Source\\Repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\obj\\",
+        "projectPath": "E:\\Alex\\Source\\Repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF.csproj",
+        "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
+        "outputPath": "E:\\Alex\\Source\\Repos\\WesternInn_TG_SA_AF\\WesternInn_TG_SA_AF\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\test\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
