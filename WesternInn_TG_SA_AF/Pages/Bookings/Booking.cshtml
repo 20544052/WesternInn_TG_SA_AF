@@ -3,3 +3,33 @@
 @{
     ViewData["Title"] = "Make a Booking";
 }
+
+<h4>Make A Booking</h4>
+
+<div class="row">
+    <div class="col-md-6">
+        @* by default, a method="post" for will be rendered. *@
+        <form asp-action="DiffBooking">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @* the class m-3 is for Generating some margin betwen input devices. *@
+            <div class="form-group m3">
+                <label asp-for="BookingInput.RoomID" class="control-label"></label>
+                <select asp-for="BookingInput.RoomID" class="form-control" asp-items="ViewBag.RoomList"></select>
+                <span asp-validation-for="BookingInput.RoomID" class="text-danger"></span>
+            </div>
+            <div class="form-group m-3">
+                <label asp-for="BookingInput.BookingA" class="control-label">Booking A</label>
+                <select asp-for="BookingInput.BookingA" class="form-control" asp-items="ViewBag.BookingList"></select>
+                <span asp-validation-for="BookingInput.BookingA" class="text-danger"></span>
+            </div>
+            <div class="form-group m-3">
+                <label asp-for="BookingInput.BookingB" class="control-label">Booking B</label>
+                <select asp-for="BookingInput.BookingB" class="form-control" asp-items="ViewBag.BookingList"></select>
+                <span asp-validation-for="BookingInput.BookingB" class="text-danger"></span>
+            </div>
+            <div class="form-group m-3">
+                <input type="submit" value="Book" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
